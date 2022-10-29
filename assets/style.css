@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  padding: 0.4rem 0.5rem;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: hsl(213, 83%, 57%);
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: hsl(348, 83%, 57%);
+  color: #fff;
+}
+.btn-warning {
+  background-color: hsl(40, 83%, 57%);
+  color: #fff;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* APP Styles */
+header {
+  background-color: #020887;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 10rem;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 3rem auto;
+  padding: 0px 3rem;
+  width: 100%;
+  display: flex;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.notes-container {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  width: 100%;
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.notes-header button {
+  padding: 0.5rem 1rem;
+}
+
+.notes-cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-counter {
+  background-color: #000;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 730px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .notes-container {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0;
+  }
+}

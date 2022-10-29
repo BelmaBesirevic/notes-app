@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <header>
+      <h1>ONNOTES</h1>
+    </header>
+    <section>
+      <div class="container">
+        <!-- form container -->
+        <div class="form-container">
+          <h2>Add Note</h2>
+          <hr />
+          <form class="flex flex-col">
+            <input type="text" id="note-title" class="mb-1 p-1" placeholder="Note Title" />
+            <textarea
+            class="mb-1 p-1"
+              id="note-text"
+              cols="30"
+              rows="10"
+              placeholder="Note Details"
+            ></textarea>
+            <button id="add-btn" class="btn btn-primary">Add Note</button>
+          </form>
+        </div>
+        <!-- notes container -->
+        <div class="notes-container">
+          <div class="notes-header flex">
+            <h2>Your Notes</h2>
+            <button class="btn btn-danger" id="clear">Delete all notes</button>
+          </div>
+          <div id="notes">
+            <!-- <hr />
+            <div class="note">
+              <div class="notes-cta">
+                <p class="note-counter">Note 1</p>
+                <div class="note-cta-btn">
+                  <button class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i>
+                    Delete
+                  </button>
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Edit
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <h3 class="note-title">Title: Hello World</h3>
+              <p class="note-text">This is some content</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
